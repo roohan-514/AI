@@ -1,0 +1,49 @@
+Problem Statement # 1:
+Imagine you are part of a team developing an advanced AI for a new video game. This game features a
+complex world where a player controls a character that must navigate through various terrains, solve
+puzzles, and overcome obstacles to reach specific goals. The game world is dynamic, with changing
+terrains and obstacles that appear or disappear based on the player&#39;s actions and environmental factors.
+Your task is to design the AI that controls non-player characters (NPCs) with the goal of challenging the
+player while ensuring the NPCs behave in a realistic and optimized manner. Your AI module must enable
+NPCs to navigate the environment effectively, using different search strategies depending on their
+objectives and the dynamic changes in the environment.
+
+Assignment Tasks
+
+1. BFS and DFS for Exploration and Mapping
+ Implement BFS and DFS to enable an NPC to explore the environment. The NPC should use BFS
+to quickly map the nearest surroundings and DFS for deep exploration when searching for hidden
+items or areas.
+ Requirements: Implement both search algorithms, allow switching between them based on the
+NPC&#39;s current objective, and demonstrate their effectiveness in exploration tasks through
+examples.
+
+2. Heuristic Search for Resource Collection
+ NPCs need to collect resources scattered throughout the environment efficiently. Implement a
+heuristic search strategy that allows an NPC to determine the most efficient path to collect a set of
+resources based on their type, quantity, and importance.
+ Requirements: Design a heuristic function that evaluates the best resources to collect and
+implement the search strategy. Compare the performance of your heuristic approach with naive
+BFS and DFS implementations.
+
+3. Hill Climbing for Terrain Navigation
+ Some NPCs are tasked with finding the highest point in the landscape to surveil the area.
+Implement a hill climbing algorithm to enable these NPCs to navigate the terrain and find the
+highest point.
+ Requirements: Implement the hill climbing algorithm, handle local maxima by allowing some
+backward steps, and demonstrate the NPC&#39;s ability to find the highest point in various terrains.
+
+4. A* for Target Pursuit
+ Implement the A* search algorithm to enable an NPC to pursue a moving target efficiently. The
+NPC should consider terrain costs and dynamic obstacles in its pursuit.
+ Requirements: Extend the A* algorithm to handle dynamic changes in the environment and
+moving targets. Analyze the efficiency of your implementation in terms of path optimality and
+computational resources.
+
+5. Integrated Scenario: Multi-Objective NPC Behavior
+ Combine all the above strategies into a single NPC with multiple objectives: exploration, resource
+collection, surveillance, and target pursuit. The NPC should switch between search strategies
+based on its current priority.
+ Requirements: Design and implement an AI controller that manages the NPC&#39;s objectives and
+selects the appropriate search strategy. Demonstrate the NPC&#39;s behavior in a complex scenario
+that requires the use of all four search strategies.
